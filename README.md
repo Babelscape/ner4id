@@ -1,6 +1,13 @@
-# NER4ID: Named Entity Recognition for Idiomaticity Detection
+# **N**amed **E**ntity **R**ecognition for **I**diomaticity **D**etection
+<center>
+
+![logo](img/ner4id_logo.png)
+
+</center>
 
 Official repository for the paper [NER4ID at SemEval-2022 Task 2: Named Entity Recognition for Idiomaticity Detection]().
+
+--------------------------------------------------------------------------------
 
 **Please consider citing our work if you use data and/or code from this repository.**
 
@@ -14,7 +21,9 @@ Official repository for the paper [NER4ID at SemEval-2022 Task 2: Named Entity R
   publisher = "Association for Computational Linguistics",
 }
 ```
+<br>
 
+# System Overview 
 In a nutshell, NER4ID is a high-performing idiom identification system that: i) uses Named Entity Recognition (NER) to pre-identify non-idiomatic expressions, and ii) exploits a novel Transformer-based dual-encoder architecture to compute the semantic similarities between the remaining potentially-idiomatic expressions and their contexts and, based on these, predict idiomaticity.
 
 The following figure shows the overall architecture of our NER4ID system:
