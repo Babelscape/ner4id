@@ -57,7 +57,7 @@ To identify entities, instead, we employed [wikineural-multilingual-ner](https:/
 
 We provide a **[Python Notebook]()** that illustrates all the modules that characterize the NER4ID system.
 For ease of use, we simplify the notebook in the following points:
-- Instead of using BERT-base-cased for English and of BERT-base-portuguese-cased}for Portuguese and Galician, we use a single BERT-base-multilingual-cased model;
+- Instead of using *BERT-base-cased* for English and of *BERT-base-portuguese-cased* for Portuguese and Galician, we use a single BERT-base-multilingual-cased model;
 - Rather than ensembling the predictions of 9 model checkpoints, we consider the predictions only of the best model;
 - To identify entities, we use rely on commonly-used SpaCy NER tagger rather than on the WikiNEuRal-based model.
 
