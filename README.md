@@ -1,9 +1,8 @@
 # **N**amed **E**ntity **R**ecognition for **I**diomaticity **D**etection
-<center>
 
-![logo](img/ner4id_logo.png)
-
-</center>
+<p align="center">
+  <img src="./img/ner4id_logo.png">
+</p>
 
 Official repository for the paper [NER4ID at SemEval-2022 Task 2: Named Entity Recognition for Idiomaticity Detection]().
 
