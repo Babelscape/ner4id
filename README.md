@@ -50,30 +50,18 @@ The datasets are available in the [/data](./data) folder.
 # Implementation
 We implemented our idiom identification system with [PyTorch](https://pytorch.org/) using the [Transformers library](https://huggingface.co/docs/transformers/index) to load the weights of a BERT-based model.
 
-We fine-tuned our idiom identification system for 100 epochs with a Mean-Squared Error loss criterion, adopting an early stopping strategy with a patience value of 20, Adam optimizer and a learning rate of $10^{-5}$, as standard when fine-tuning the weights of a pretrained language model. 
-Additionally, we set $\delta=0$, and use 32 as batch size, with 4 steps of gradient accumulation. 
+We fine-tuned our idiom identification system for 100 epochs with a Mean-Squared Error loss criterion, adopting an early stopping strategy with a patience value of 20, Adam optimizer and a learning rate of 10-5, as standard when fine-tuning the weights of a pretrained language model. 
+Additionally, we set δ=0, and use 32 as batch size, with 4 steps of gradient accumulation. 
 
 To identify entities, instead, we employed [wikineural-multilingual-ner](https://huggingface.co/Babelscape/wikineural-multilingual-ner), a Multilingual BERT (mBERT) model fine-tuned on the [WikiNEuRal](https://github.com/babelscape/wikineural) dataset. We compare systems by means of their Macro F1 scores, as specified by the competition rules.
 
 We provide a **[Python Notebook]()** that illustrates all the modules that characterize the NER4ID system.
 For ease of use, we simplify the notebook in the following points:
-- Instead of using BERT-base-cased for English and of BERT-base-portuguese-cased}for Portuguese and Galician, we use a single BERT-base-multilingual-cased model;
+- Instead of using BERT-base-cased for English and of BERT-base-portuguese-cased for Portuguese and Galician, we use a single BERT-base-multilingual-cased model;
 - Rather than ensembling the predictions of 9 model checkpoints, we consider the predictions only of the best model;
-- To identify entities, we use rely on commonly-used SpaCy NER tagger rather than on the WikiNEuRal-based model.
+- To identify entities, we rely on the commonly-used SpaCy NER tagger.
 
 For further implementation details, please refer to the paper.
-
-<br>
-
-# Pretrained Models
-Here you can download the NER4ID pretrained models used for both the zero-shot and one-shot settings.
-
-- [ner4id-zero-shot.pt]()
-- [ner4id-one-shot.pt]()
-
-For further details about the systems, please refer architecture refer to the paper.
-
-**Note**: place the models into the *models/* folder.
 
 
 <br>
