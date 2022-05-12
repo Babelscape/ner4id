@@ -65,19 +65,6 @@ For further implementation details, please refer to the paper.
 
 <br>
 
-# Pretrained Models
-Here you can download the NER4ID pretrained models used for both the zero-shot and one-shot settings.
-
-- [ner4id-zero-shot.pt]()
-- [ner4id-one-shot.pt]()
-
-For further details about the systems, please refer architecture refer to the paper.
-
-**Note**: place the models into the *models/* folder.
-
-
-<br>
-
 # License 
 NER4ID is licensed under the CC BY-SA-NC 4.0 license. The text of the license can be found [here](https://github.com/Babelscape/ner4id/LICENSE).
 
