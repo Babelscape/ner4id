@@ -50,8 +50,8 @@ The datasets are available in the [/data](./data) folder.
 # Implementation
 We implemented our idiom identification system with [PyTorch](https://pytorch.org/) using the [Transformers library](https://huggingface.co/docs/transformers/index) to load the weights of a BERT-based model.
 
-We fine-tuned our idiom identification system for 100 epochs with a Mean-Squared Error loss criterion, adopting an early stopping strategy with a patience value of 20, Adam optimizer and a learning rate of $10^{-5}$, as standard when fine-tuning the weights of a pretrained language model. 
-Additionally, we set $\delta=0$, and use 32 as batch size, with 4 steps of gradient accumulation. 
+We fine-tuned our idiom identification system for 100 epochs with a Mean-Squared Error loss criterion, adopting an early stopping strategy with a patience value of 20, Adam optimizer and a learning rate of 10-5, as standard when fine-tuning the weights of a pretrained language model. 
+Additionally, we set δ=0, and use 32 as batch size, with 4 steps of gradient accumulation. 
 
 To identify entities, instead, we employed [wikineural-multilingual-ner](https://huggingface.co/Babelscape/wikineural-multilingual-ner), a Multilingual BERT (mBERT) model fine-tuned on the [WikiNEuRal](https://github.com/babelscape/wikineural) dataset. We compare systems by means of their Macro F1 scores, as specified by the competition rules.
 
