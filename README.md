@@ -4,7 +4,7 @@
   <img src="./img/ner4id_logo.png">
 </p>
 
-Official repository for the paper [NER4ID at SemEval-2022 Task 2: Named Entity Recognition for Idiomaticity Detection]().
+Official repository for the paper [NER4ID at SemEval-2022 Task 2: Named Entity Recognition for Idiomaticity Detection](https://www.researchgate.net/publication/360541089_NER4ID_at_SemEval-2022_Task_2_Named_Entity_Recognition_for_Idiomaticity_Detection).
 
 --------------------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ Additionally, we set δ=0, and use 32 as batch size, with 4 steps of gradient ac
 
 To identify entities, instead, we employed [wikineural-multilingual-ner](https://huggingface.co/Babelscape/wikineural-multilingual-ner), a Multilingual BERT (mBERT) model fine-tuned on the [WikiNEuRal](https://github.com/babelscape/wikineural) dataset. We compare systems by means of their Macro F1 scores, as specified by the competition rules.
 
-We provide a **[Python Notebook]()** that illustrates all the modules that characterize the NER4ID system.
+We provide a **[Python Notebook](./code/NER4ID.ipynb)** that illustrates all the modules that characterize the NER4ID system.
 For ease of use, we simplify the notebook in the following points:
 - Instead of using *BERT-base-cased* for English and of *BERT-base-portuguese-cased* for Portuguese and Galician, we use a single BERT-base-multilingual-cased model;
 - Rather than ensembling the predictions of 9 model checkpoints, we consider the predictions only of the best model;
