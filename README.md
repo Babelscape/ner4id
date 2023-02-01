@@ -13,11 +13,18 @@ Official repository for the paper [NER4ID at SemEval-2022 Task 2: Named Entity R
 #### Bibtex
 ```bibtex
 @inproceedings{tedeschi-navigli-2022-ner4id,
-  title={{NER4ID} at {S}em{E}val-2022 {T}ask 2: {N}amed {E}ntity {R}ecognition for {I}diomaticity {D}etection},
-  author={Tedeschi, Simone and Navigli, Roberto},
-  booktitle={Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022)},
-  year={2022},
-  publisher = "Association for Computational Linguistics",
+    title = "{NER}4{ID} at {S}em{E}val-2022 Task 2: Named Entity Recognition for Idiomaticity Detection",
+    author = "Tedeschi, Simone  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022)",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.semeval-1.25",
+    doi = "10.18653/v1/2022.semeval-1.25",
+    pages = "204--210",
+    abstract = "Idioms are lexically-complex phrases whose meaning cannot be derived by compositionally interpreting their components. Although the automatic identification and understanding of idioms is essential for a wide range of Natural Language Understanding tasks, they are still largely under-investigated.This motivated the organization of the SemEval-2022 Task 2, which is divided into two multilingual subtasks: one about idiomaticity detection, and the other about sentence embeddings. In this work, we focus on the first subtask and propose a Transformer-based dual-encoder architecture to compute the semantic similarity between a potentially-idiomatic expression and its context and, based on this, predict idiomaticity. Then, we show how and to what extent Named Entity Recognition can be exploited to reduce the degree of confusion of idiom identification systems and, therefore, improve performance.Our model achieves 92.1 F1 in the one-shot setting and shows strong robustness towards unseen idioms achieving 77.4 F1 in the zero-shot setting. We release our code at https://github.com/Babelscape/ner4id.",
 }
 ```
 <br>
